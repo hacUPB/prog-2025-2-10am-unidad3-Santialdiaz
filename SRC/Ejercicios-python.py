@@ -11,3 +11,15 @@ altura= float(altura)
 imc = peso/altura**2
 #Mostrar IMC
 print("Tu IMC = ", imc)
+if imc < 18.5:
+    print("Bajo peso")
+if imc >= 18.5 and imc < 25:
+    print("Peso normal")
+if imc >= 25 and imc < 30:
+    print("Sobrepeso")
+if imc >= 30:
+    print("Obesidad")
+if imc >= 40:
+    print("Obesidad morbida")
+if imc >= 50:
+    print("Obesidad extrema")
