@@ -20,6 +20,16 @@ En el siguiente archivo se presentan las 3 tablas de forma digital solicitadas p
 | `complex`    | Número complejo                          | `3+4j`         |
 | `bool`       | Booleano (True o False)                  | `True`, `False`|
 
+## Operadores Relacionales
+| Operador | Descripción           | Ejemplo   | Resultado |
+|----------|-----------------------|-----------|-----------|
+| `==`     | Igual a               | `5 == 5`  | `True`    |
+| `!=`     | Distinto de           | `5 != 3`  | `True`    |
+| `>`      | Mayor que             | `7 > 4`   | `True`    |
+| `<`      | Menor que             | `2 < 5`   | `True`    |
+| `>=`     | Mayor o igual que     | `6 >= 6`  | `True`    |
+| `<=`     | Menor o igual que     | `3 <= 4`  | `True`    |
+
 ## Combinaciones Válidas de Tipos en Operaciones
 | Operación        | Tipos Involucrados     | Resultado | Comentario                                 |
 |------------------|------------------------|-----------|--------------------------------------------|
