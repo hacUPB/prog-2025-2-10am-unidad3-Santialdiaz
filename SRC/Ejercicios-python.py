@@ -12,14 +12,17 @@ imc = peso/altura**2
 #Mostrar IMC
 print("Tu IMC = ", imc)
 if imc < 18.5:
-    print("Bajo peso")
-if imc >= 18.5 and imc < 25:
-    print("Peso normal")
-if imc >= 25 and imc < 30:
-    print("Sobrepeso")
-if imc >= 30:
-    print("Obesidad")
-if imc >= 40:
-    print("Obesidad morbida")
-if imc >= 50:
-    print("Obesidad extrema")
+    mensaje = "Bajo peso"
+elif imc >= 18.5 and imc < 25:
+    mensaje = "Peso normal"
+elif imc >= 25 and imc < 30:
+    mensaje ="Sobrepeso"
+elif imc >= 30:
+     mensaje ="Obesidad"
+elif imc >= 40:
+    mensaje = "Obesidad morbida"
+elif imc >= 50:
+    mensaje = "Obesidad extrema"
+
+print(f"Paciente: {nombre}, tiene un IMC de: {imc:0.2f} y su estado es: {mensaje}")
+
