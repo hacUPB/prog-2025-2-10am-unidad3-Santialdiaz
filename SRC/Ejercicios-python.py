@@ -26,3 +26,11 @@ elif imc >= 50:
 
 print(f"Paciente: {nombre}, tiene un IMC de: {imc:0.2f} y su estado es: {mensaje}")
 
+Ejercicio Condicional Simple
+Se le pide al usuario que ingrese un numero entero y que muestre un mensaje si el numero es divisible por 3.
+
+numero = int(input("Ingrese un numero entero: "))
+if numero % 3 == 0:
+    print(f"El numero {numero} es divisible por 3")     
+
+
