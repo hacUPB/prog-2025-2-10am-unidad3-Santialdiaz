@@ -23,3 +23,11 @@ match opcion:
         print("Saliendo del programa...")
     case _:
         print("Opción inválida.")
+
+
+
+##Bucles
+numero = 1
+while numero <= 5:
+    print(numero)
+    numero += 1      #numero = numero + 1
