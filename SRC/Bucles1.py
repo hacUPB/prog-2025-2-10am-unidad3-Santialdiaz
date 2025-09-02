@@ -13,12 +13,12 @@ if num1 > num2 :
 else:
     mayor = num2
     menor = num1
-''''''''
+'''
 while menor <= mayor:
     if menor % 2 == 0:
         print (menor)
     menor +=1
-''''''''
+'''
 if menor % 2 == 1:
     menor += 1
 while menor <= mayor:
