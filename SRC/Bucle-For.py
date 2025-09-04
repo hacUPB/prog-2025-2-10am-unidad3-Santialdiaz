@@ -17,7 +17,7 @@ for i in range (numero):
 #EN ESTE CASO LA i SE USA SOLO POR LA SINTAXIS
 '''
 # Conversor de Temperatura
-
+'''
 opcion = 'L'                     #Valor temporal
 while opcion != 'Q':
     opcion = input("F, Fahrenheit a Celsius\nC. Celsius a Fahrenheit\nQ. Salir\n")
@@ -37,5 +37,28 @@ while opcion != 'Q':
                 print("Opcion no valida")
     else:
         print("Saliendo del programa... ")
-      
+ '''     
 
+#VERIFICADOR DE NUMEROS PRIMOS 
+
+'''
+Variable de entrada
+numero    int
+
+Variable de salida
+divisores
+'''
+'''
+numero = int(input("Ingrese un numero entero mayor que 1: "))
+cont = 0
+for i in range(1, numero + 1 ):
+    if numero % i == 0:
+        cont += 1
+
+if cont == 2:
+    print(f"{numero} es primo")
+else:
+    for i in range(1, numero + 1 ):
+        if numero % i == 0:
+            print(i)
+'''
