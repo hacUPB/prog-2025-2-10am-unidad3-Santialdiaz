@@ -11,6 +11,36 @@ String (texto) → Es una palabra, frase o cualquier texto escrito entre comilla
 Ejemplo: "sí", "no", "opción 1", "menu principal"
 
 
+## variables de control
+
+
+1. Velocidad mínima de aterrizaje
+
+W_actual → variable que cambia en cada iteración y determina el cálculo de la velocidad mínima.
+
+continuar → controla si el bucle Mientras sigue ejecutándose o se detiene.
+
+Condicional: Si V_landing > 150 → controla la alerta de advertencia.
+
+2. Consumo de combustible en vuelo
+
+combustible → variable principal que controla si el bucle sigue (combustible > 0).
+
+fase → define la tasa de consumo (controla el cálculo en cada ciclo).
+
+tiempo → controla cuánto combustible se resta en cada fase.
+
+continuar → controla si el usuario quiere seguir en el bucle o salir.
+
+3. Sustentación en despegue
+
+v (velocidad) → aumenta en cada iteración y controla el crecimiento de la sustentación.
+
+L (sustentación) → se compara con el peso para detener el bucle.
+
+Condicional: Si L ≥ peso → condición de salida del bucle (el avión despega).
+
+
 
 
 ### Caso 1: Velocidad Mínima de Aterrizaje  
@@ -51,3 +81,12 @@ Ejemplo: "sí", "no", "opción 1", "menu principal"
 | **aceleracion** | Float – Constante  | La aceleración del avión en la pista, sirve para ir aumentando la velocidad en cada paso. |
 | **L**        | Float – Salida        | La fuerza de sustentación que se calcula con la fórmula: \(L = \tfrac{1}{2}\rho v^2 Cl A\). |
 | **opcion**   | String – Entrada      | Opción que elige el usuario en el menú principal. |
+
+
+
+Ayuda IA
+| Reto                           | Ecuación principal                                      | Variables involucradas |
+|--------------------------------|---------------------------------------------------------|-------------------------|
+| 1. Velocidad mínima de aterrizaje | \( V_{landing} = V_{ref} \cdot \sqrt{\tfrac{W}{W_{ref}}} \) | \(V_{landing}\): velocidad mínima de aterrizaje<br>\(V_{ref}\): velocidad de referencia<br>\(W\): peso actual<br>\(W_{ref}\): peso de referencia |
+| 2. Consumo de combustible       | \( Combustible = Combustible - (tasa \cdot tiempo) \)   | \(Combustible\): litros disponibles<br>\(tasa\): consumo según fase (5, 3 o 2 L/min)<br>\(tiempo\): duración de la fase (min) |
+| 3. Sustentación en despegue     | \( L = \tfrac{1}{2} \cdot \rho \cdot v^2 \cdot C_L \cdot A \) <br> Condición: \(L \geq Peso\) | \(L\): sustentación<br>\(\rho\): densidad del aire<br>\(v\): velocidad<br>\(C_L\): coeficiente de sustentación<br>\(A\): superficie alar<br>\(Peso\): peso del avión |

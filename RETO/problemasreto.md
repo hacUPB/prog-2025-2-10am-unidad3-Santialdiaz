@@ -5,7 +5,7 @@
 de vuelo).
 4. Salir del programa.
 
-# ANÁLISIS DE CADA PROBLEMA
+# PLANTEAMIENTO DE CADA PROBLEMA
 ## Opción 1: Simulación de Fuerza de Arrastre (Drag)
 • Contexto: La fuerza de arrastre depende de la velocidad, el área alar, la densidad del
 aire y el coeficiente de arrastre.
