@@ -62,3 +62,6 @@ else:
         if numero % i == 0:
             print(i)
 '''
+
+ 
+ 
