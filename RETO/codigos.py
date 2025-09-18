@@ -32,7 +32,7 @@ while opcion != "S":
                         print(" Advertencia: Velocidad alta, considere reducir peso antes del aterrizaje.")
                     
                     continuar = input("¿Desea continuar la simulación en vuelo? (Si/No): ").lower()
-                    if continuar != "Si":
+                    if continuar != "si":
                         print("Simulación terminada. ")
                         break
             case "2":
